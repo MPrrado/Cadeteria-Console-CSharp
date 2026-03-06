@@ -20,7 +20,7 @@ El sistema permite simular el flujo básico del trabajo de una empresa de envío
 
 1. Clonar el repositorio:
     ```bash
-   git clone [https://github.com/MPrrado/Cadeteria-Console-CSharp.git](https://github.com/MPrrado/Cadeteria-Console-CSharp.git)  
+   git clone https://github.com/MPrrado/Cadeteria-Console-CSharp.git  
 2. Navegar a la carpeta del proyecto:
     ```
     cd Cadeteria-Console-CSharp
