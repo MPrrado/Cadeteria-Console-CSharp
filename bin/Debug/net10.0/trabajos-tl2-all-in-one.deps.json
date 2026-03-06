@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "trabajos-tl2-all-in-one/1.0.0": {
+        "runtime": {
+          "trabajos-tl2-all-in-one.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "trabajos-tl2-all-in-one/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,14 @@
+D:\proyectos\trabajos-tl2-all-in-one\bin\Debug\net10.0\trabajos-tl2-all-in-one.exe
+D:\proyectos\trabajos-tl2-all-in-one\bin\Debug\net10.0\trabajos-tl2-all-in-one.deps.json
+D:\proyectos\trabajos-tl2-all-in-one\bin\Debug\net10.0\trabajos-tl2-all-in-one.runtimeconfig.json
+D:\proyectos\trabajos-tl2-all-in-one\bin\Debug\net10.0\trabajos-tl2-all-in-one.dll
+D:\proyectos\trabajos-tl2-all-in-one\bin\Debug\net10.0\trabajos-tl2-all-in-one.pdb
+D:\proyectos\trabajos-tl2-all-in-one\obj\Debug\net10.0\trabajos-tl2-all-in-one.GeneratedMSBuildEditorConfig.editorconfig
+D:\proyectos\trabajos-tl2-all-in-one\obj\Debug\net10.0\trabajos-tl2-all-in-one.AssemblyInfoInputs.cache
+D:\proyectos\trabajos-tl2-all-in-one\obj\Debug\net10.0\trabajos-tl2-all-in-one.AssemblyInfo.cs
+D:\proyectos\trabajos-tl2-all-in-one\obj\Debug\net10.0\trabajos-tl2-all-in-one.csproj.CoreCompileInputs.cache
+D:\proyectos\trabajos-tl2-all-in-one\obj\Debug\net10.0\trabajos-tl2-all-in-one.dll
+D:\proyectos\trabajos-tl2-all-in-one\obj\Debug\net10.0\refint\trabajos-tl2-all-in-one.dll
+D:\proyectos\trabajos-tl2-all-in-one\obj\Debug\net10.0\trabajos-tl2-all-in-one.pdb
+D:\proyectos\trabajos-tl2-all-in-one\obj\Debug\net10.0\trabajos-tl2-all-in-one.genruntimeconfig.cache
+D:\proyectos\trabajos-tl2-all-in-one\obj\Debug\net10.0\ref\trabajos-tl2-all-in-one.dll
