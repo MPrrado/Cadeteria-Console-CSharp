@@ -2,6 +2,7 @@ using System.Data;
 using System.IO.Compression;
 using System.Reflection.Metadata.Ecma335;
 using System.Security.Cryptography.X509Certificates;
+using EspacioAccesoADatos;
 using EspacioCadete;
 using EspacioCliente;
 using EspacioPedido;
@@ -40,11 +41,12 @@ namespace EspacioCadeteria
             return totalRecaudado;
         }
 
-        public bool AltaPedido(Cliente cliente, string? observacion)
+        public bool AltaPedido(string? observacion, string rutaArchivoClientes)
         {
             try
             {
-                Pedido pedido = new(cliente, observacion);
+                string[] datosClienteAleatorio = AccesoADatos.ObtenerCliente(rutaArchivoClientes);
+                Pedido pedido = new(datosClienteAleatorio[0],datosClienteAleatorio[1],long.Parse(datosClienteAleatorio[2]), datosClienteAleatorio[3], observacion);
                 pedido.AsignarNumeroPedido(listadoPedidos.Count == 0 ? 1:listadoPedidos.Count+1);
                 pedido.CambiarEstado(Estados.SinAsignar);
                 listadoPedidos.Add(pedido);

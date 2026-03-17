@@ -2,6 +2,7 @@
 using System.Security.AccessControl;
 using System.Security.Cryptography;
 using System.Threading.Channels;
+using EspacioAccesoADatos;
 using EspacioCadete;
 using EspacioCadeteria;
 using EspacioCliente;
@@ -9,19 +10,25 @@ using EspacioPedido;
 
 bool siguePrograma = true;
 
-Cadeteria miCadeteria = new Cadeteria("MiCadeteria",3815825154);
-List<Cliente> listaClientes = [
-    new ("Cliente 1", "direccion cliente 1", 3811111111, "ref 1"),
-    new ("Cliente 2", "direccion cliente 2", 3812222222, "ref 2"),
-    new ("Cliente 3", "direccion cliente 3", 3813333333, "ref 3"),
-    new ("Cliente 4", "direccion cliente 4", 3814444444, "ref 4"),
-    new ("Cliente 5", "direccion cliente 5", 3815555555, "ref 5")];
-List<Cadete> listaCadetes = [
-    new (1,"cadete 1", "direccion cadete 1", 3811111111),
-    new (2,"cadete 2", "direccion cadete 2", 3812222222),
-    new (3,"cadete 3", "direccion cadete 3", 3813333333),
-    new (4,"cadete 4", "direccion cadete 4", 3814444444),
-    new (5,"cadete 5", "direccion cadete 5", 3815555555)];
+// Cadeteria miCadeteria = new Cadeteria("MiCadeteria",3815825154);
+// List<Cliente> listaClientes = [
+//     new ("Cliente 1", "direccion cliente 1", 3811111111, "ref 1"),
+//     new ("Cliente 2", "direccion cliente 2", 3812222222, "ref 2"),
+//     new ("Cliente 3", "direccion cliente 3", 3813333333, "ref 3"),
+//     new ("Cliente 4", "direccion cliente 4", 3814444444, "ref 4"),
+//     new ("Cliente 5", "direccion cliente 5", 3815555555, "ref 5")];
+// List<Cadete> listaCadetes = [
+//     new (1,"cadete 1", "direccion cadete 1", 3811111111),
+//     new (2,"cadete 2", "direccion cadete 2", 3812222222),
+//     new (3,"cadete 3", "direccion cadete 3", 3813333333),
+//     new (4,"cadete 4", "direccion cadete 4", 3814444444),
+    // new (5,"cadete 5", "direccion cadete 5", 3815555555)];
+
+string rutaArchivoClientes = "src/clientes.csv";
+string rutaCadeteriaCSV = "src/cadeteria.csv";
+string rutaCadetesCSV = "src/cadetes.csv";
+Cadeteria miCadeteria = AccesoADatos.CargarDatosCadeteria(rutaCadeteriaCSV);
+List<Cadete> listaCadetes = AccesoADatos.CargarListadoCadetes(rutaCadetesCSV);
 
 foreach (Cadete c in listaCadetes)
 {
@@ -57,7 +64,7 @@ while (siguePrograma)
                 {
                     Console.WriteLine("Ingrese la observacion del pedido: ");
                     string observacion = Console.ReadLine();
-                    miCadeteria.AltaPedido(listaClientes[random.Next(4)],observacion);
+                    miCadeteria.AltaPedido(observacion, rutaArchivoClientes);
                     bool letracorrecta = true;
                     while (letracorrecta)
                     {
