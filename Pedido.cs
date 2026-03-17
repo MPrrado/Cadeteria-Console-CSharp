@@ -72,7 +72,7 @@ namespace EspacioPedido
         
         public void MostrarPedido()
         {
-             Console.WriteLine($"~~~ Pedido Numero: {numPedido} | Observacion: {observacion} | Direccion: {cliente.Direccion} | Estado: {estado}");
+             Console.WriteLine($"~~~ Pedido Numero: {numPedido} | Observacion: {observacion} | Nombre Cliente: {cliente.Nombre} | Direccion: {cliente.Direccion} | Estado: {estado}");
         }
 
         public void AsignarIdCadete(int numeroCadete)
